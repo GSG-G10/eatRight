@@ -1,5 +1,4 @@
 // Core Modules
-request = require('request');
 const url = require("url");
 const fetch = require("node-fetch");
 

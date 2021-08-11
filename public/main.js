@@ -6,9 +6,14 @@ const textValidation = (domEle, value) => {
     }
 }
 
-
 const clear = (arr) => {
     for(ele of arr){
         ele.textContent = '-'
+    }
+}
+
+const clearInput = (arr) => {
+    for(ele of arr){
+        ele.value = ''
     }
 }

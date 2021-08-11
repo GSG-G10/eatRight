@@ -18,6 +18,7 @@ const analysisBtn = document.querySelector(".analysisBtn");
 const quantity = document.querySelector(".quantity");
 const units = document.querySelector(".units");
 const ingredient = document.querySelector(".ingredient");
+const erorr = document.querySelector(".erorr");
 
 const showData = (data) => {
   textValidation(calories, data.totalNutrients.ENERC_KCAL);
@@ -39,7 +40,7 @@ const showData = (data) => {
 
 
 clearBtn.addEventListener('click',() =>{
-  let elemantArray = [calories,totalFat,fatPer,satFat,satFatPer,cholesterol,colPer,sodium,sodiumPer,totalCarb,carbPer,suger,sugerPer,protein,protienPer]
+  let elemantArray = [calories,totalFat,fatPer,satFat,satFatPer,cholesterol,colPer,sodium,sodiumPer,totalCarb,carbPer,suger,sugerPer,protein,protienPer,erorr]
   let inputArray = [quantity, units, ingredient]
   clear(elemantArray);
   clearInput(inputArray);
@@ -49,10 +50,27 @@ analysisBtn.addEventListener('click', () =>{
     let quantity = document.querySelector(".quantity").value;
     let units = document.querySelector(".units").value;
     let ingredient = document.querySelector(".ingredient").value;
-    fetch(
-        `/search?nutrition-type=cooking&ingr=${quantity}%20${units}%20${ingredient}`
-      )
+    fetch(`/search?nutrition-type=cooking&ingr=${quantity}%20${units}%20${ingredient}`)
         .then((response) => response.json())
         .then((data) => showData(data));
-})
+        
+        validation()
+});
 
+
+
+const validation= () => {
+  const quantity = document.querySelector(".quantity").value;
+  console.log(quantity)
+  const units = document.querySelector(".units").value;
+  const ingredient = document.querySelector(".ingredient").value;
+  if(ingredient.value == undefined){
+    erorr.textContent = 'Enter ingredient'
+  }
+  if(units.value == undefined){
+    erorr.textContent = 'Enter units'
+  }
+  if(quantity.value == undefined){
+    erorr.textContent = 'Enter quantity'
+  }
+}

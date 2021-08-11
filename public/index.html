@@ -16,8 +16,8 @@
         <div class="text-content">
           <h1 class="head-text">Nutrition Analysis</h1>
           <h5 class="content-text">
-            Enter an ingredient list list for what you are cooking, like "1 cup
-            rice, 10 oz chickpeas", etc. Enter each ingredient on a new line.
+            Enter a quitity, measurment unit for any ingredient
+            to give you it’s Nutritions analysis for it
           </h5>
         </div>
         <div class="controler">
@@ -25,7 +25,7 @@
             type="number"
             id="tentacles"
             name="tentacles"
-            min="10"
+            min="0.25"
             max="100"
             class="quantity"
           />
@@ -36,8 +36,8 @@
             <option value="tsp">tsp</option>
           </select>
           <input type="text" placeholder="Ingredient" class="ingredient"/>
-          <button class="button analysisBtn">button</button>
-          <button class="button clearBtn">button</button>
+          <button class="button analysisBtn">Analysis</button>
+          <button class="button clearBtn">Clear</button>
         </div>
         <div class="table-analyse">
           <table>
@@ -62,21 +62,50 @@
         <h1 class="Facts">Nutrition Facts</h1>
         <hr />
         <h4>Amount Per Serving</h4>
-        <h1>Calories <span class="calories">505656</span></h1>
+        <div class="nutritionRow">
+          <p class="caloriesLable"><b>Calories</b></p>
+          <p><b class="calories"></b></p>
+        </div>
         <hr />
-        <p><b>Total Fat </b><span class="totalFat">52g</span> <b class="fatPer">28%</b></p>
+        <div class="nutritionRow">
+          <p></p>
+          <p>% Daily Value</p>
+        </div>
+        <hr/>
+        <div class="nutritionRow">
+          <p><b>Total Fat </b><span class="totalFat"></span></p>
+          <p><b class="fatPer"></b></p>
+        </div>
         <hr />
-        <p>Saturated Fat <span class="satFat">52g</span> <b class="satFatPer">28%</b></p>
+        <div class="nutritionRow">
+          <p>Saturated Fat <span class="satFat"></span> </p>
+          <p class="satFatPer"></p>
+        </div>
         <hr />
-        <p><b>Cholesterol</b> <span class="cholesterol">52g</span> <b class="colPer">28%</b></p>
+        <div class="nutritionRow">
+          <p><b>Cholesterol</b> <span class="cholesterol"></span></p>
+          <p><b class="colPer"></b></p>
+        </div>
         <hr />
-        <p><b>Sodium </b><span class="sodium">52g</span> <span class="sodiumPer">28%</span></p>
+        <div class="nutritionRow">
+          <p><b>Sodium </b><span class="sodium"></span> </p>
+          <p><b class="sodiumPer"></b></p>
+        </div>
         <hr />
-        <p><b>Total Carbohydrate </b><span class="totalCarb">52g</span> <b class="carbPer">28%</b></p>
+        <div class="nutritionRow">
+          <p><b>Total Carbohydrate </b><span class="totalCarb"></span> </p>
+          <p><b class="carbPer"></b></p>
+        </div>
         <hr />
-        <p>Total Suger <span class="suger">52g</span> <b class="sugerPer">28%</b></p>
+        <div class="nutritionRow">
+          <p>Total Suger <span class="suger"></span></p>
+          <p class="sugerPer"></p>
+        </div>
         <hr />
-        <p><b>Protein </b><span class="protein">52g</span> <b class="protienPer">28%</b></p>
+        <div class="nutritionRow">
+          <p><b>Protein </b><span class="protein"></span></p>
+          <p><b class="protienPer"></b></p>
+        </div>
         <hr />
       </aside>
     </section>

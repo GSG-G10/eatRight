@@ -27,16 +27,17 @@
             name="tentacles"
             min="10"
             max="100"
+            class="quantity"
           />
-          <select id="cars" name="cars">
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="fiat">Fiat</option>
-            <option value="audi">Audi</option>
+          <select id="units" name="cars" class="units">
+            <option value="cup">Cup</option>
+            <option value="oz">Oz</option>
+            <option value="Tbsp">Tbsp</option>
+            <option value="tsp">tsp</option>
           </select>
-          <input type="text" placeholder="food name" />
-          <button class="button">button</button>
-          <button class="button">button</button>
+          <input type="text" placeholder="Ingredient" class="ingredient"/>
+          <button class="button analysisBtn">button</button>
+          <button class="button clearBtn">button</button>
         </div>
         <div class="table-analyse">
           <table>
@@ -57,28 +58,29 @@
           </table>
         </div>
       </section>
-      <aside class="showData">
+      <aside class="factsTable">
         <h1 class="Facts">Nutrition Facts</h1>
         <hr />
         <h4>Amount Per Serving</h4>
-        <h1>Calories <span>505656</span></h1>
+        <h1>Calories <span class="calories">505656</span></h1>
         <hr />
-        <p>Total Fat <span>52g</span></p>
+        <p><b>Total Fat </b><span class="totalFat">52g</span> <b class="fatPer">28%</b></p>
         <hr />
-        <p>Total Fat <span>52g</span></p>
+        <p>Saturated Fat <span class="satFat">52g</span> <b class="satFatPer">28%</b></p>
         <hr />
-        <p>Total Fat <span>52g</span></p>
+        <p><b>Cholesterol</b> <span class="cholesterol">52g</span> <b class="colPer">28%</b></p>
         <hr />
-        <p>Total Fat <span>52g</span></p>
+        <p><b>Sodium </b><span class="sodium">52g</span> <span class="sodiumPer">28%</span></p>
         <hr />
-        <p>Total Fat <span>52g</span></p>
+        <p><b>Total Carbohydrate </b><span class="totalCarb">52g</span> <b class="carbPer">28%</b></p>
         <hr />
-        <p>Total Fat <span>52g</span></p>
+        <p>Total Suger <span class="suger">52g</span> <b class="sugerPer">28%</b></p>
         <hr />
-        <p>Total Fat <span>52g</span></p>
+        <p><b>Protein </b><span class="protein">52g</span> <b class="protienPer">28%</b></p>
         <hr />
-        <p>Total Fat <span>52g</span></p>
       </aside>
     </section>
+    <script src="./main.js"></script>
+    <script src="./dom.js"></script>
   </body>
 </html>

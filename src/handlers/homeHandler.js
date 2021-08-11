@@ -1,10 +1,11 @@
 // Core Modules
-const path = require('path');
+request = require('request');
 
 // Code
 const homeHandler = (req, res) => {
-    const filePath = path.join(__dirname, '..', 'food.json');
-    res.sendFile(filePath);
+     
+
+    res.json();
 };
 
 module.exports = homeHandler;

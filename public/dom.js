@@ -13,6 +13,7 @@ const suger = document.querySelector(".suger");
 const sugerPer = document.querySelector(".sugerPer");
 const protein = document.querySelector(".protein");
 const protienPer = document.querySelector(".protienPer");
+const clearBtn = document.querySelector(".clearBtn");
 
 const showData = (data) => {
   textValidation(calories, data.totalNutrients.ENERC_KCAL);
@@ -31,3 +32,9 @@ const showData = (data) => {
   textValidation(protein, data.totalNutrients.PROCNT);
   textValidation(protienPer, data.totalDaily.PROCNT)
 };
+
+
+clearBtn.addEventListener('click',() =>{
+  elemantArray = [calories,totalFat,fatPer,satFat,satFatPer,cholesterol,colPer,sodium,sodiumPer,totalCarb,carbPer,suger,sugerPer,protein,protienPer]
+  clear(elemantArray)
+})

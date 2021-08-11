@@ -5,3 +5,10 @@ const textValidation = (domEle, value) => {
         domEle.textContent = `${value.quantity.toFixed(1)} ${value.unit}`;
     }
 }
+
+
+const clear = (arr) => {
+    for(ele of arr){
+        ele.textContent = '-'
+    }
+}

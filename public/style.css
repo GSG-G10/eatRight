@@ -58,11 +58,11 @@
   width: 56%;
   padding-top: 2rem;
 }
-.caloriesLable{
+.caloriesLable {
   font-size: 24px;
   font-weight: 800;
 }
-.nutritionRow{
+.nutritionRow {
   display: flex;
   justify-content: space-between;
 }
@@ -71,38 +71,21 @@
   display: flex;
   width: 60%;
   justify-content: center;
-  /* border: solid 1px black; */
   justify-content: space-evenly;
 }
 .head img {
   width: 7rem;
   padding: 0.5rem;
 }
-.table-analyse {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-table,
-th,
-td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-th,
-td {
-  padding: 5px;
-  text-align: left;
-}
 
 .button {
   width: 7rem;
   height: 2rem;
-  background-color: #A7CF5D;
+  background-color: #a7cf5d;
   color: white;
   font-size: 18px;
   font-weight: 800;
-  border: #A7CF5D;
+  border: #a7cf5d;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

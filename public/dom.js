@@ -64,13 +64,13 @@ const validation= () => {
   console.log(quantity)
   const units = document.querySelector(".units").value;
   const ingredient = document.querySelector(".ingredient").value;
-  if(ingredient === undefined){
+  if(ingredient === ""){
     erorr.textContent = 'Enter ingredient'
   }
-  if(units === undefined){
+  if(units === ""){
     erorr.textContent = 'Enter units'
   }
-  if(quantity === undefined){
+  if(quantity === ""){
     erorr.textContent = 'Enter quantity'
   }
 }
